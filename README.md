@@ -8,6 +8,7 @@ To create your own picture, you need to put the picture key in the k.txt file an
 ## References
 
 [Wikipedia](https://en.wikipedia.org/wiki/Tupper%27s_self-referential_formula)
+
 [Numberphile video](https://www.youtube.com/watch?v=_s5RFgd59ao)
 
 ## Here is what the formula looks like
