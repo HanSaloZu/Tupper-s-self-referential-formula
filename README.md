@@ -1,4 +1,4 @@
-# Tupper-s-self-referential-formula-on-Python
+# Tupper-s-self-referential-formula-in-Python
 Implementing the Tapper self-referential formula in Python, with which you can create bitmaps with a size of 17x106 pixels.
 
 Run main.py to see the graph as a graph equation. 
