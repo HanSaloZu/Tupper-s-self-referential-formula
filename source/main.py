@@ -1,3 +1,4 @@
+import os
 import mathematics
 import display
 from decimal import Decimal, getcontext
@@ -10,8 +11,9 @@ if __name__ == "__main__":
     turtle.up()
 
     getcontext().prec = 10000
+    DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-    with open("k.txt", "r") as txt_k:
+    with open(DIR + "/source/k.txt", "r") as txt_k:
         k = Decimal(txt_k.read())
 
     x = -700
