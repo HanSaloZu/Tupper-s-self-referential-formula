@@ -4,9 +4,9 @@ from decimal import Decimal, getcontext
 
 
 if __name__ == "__main__":
-    screen = display.get_customized_screen()
+    screen = display.create_screen()
 
-    turtle = display.get_turtle()
+    turtle = display.create_turtle()
     turtle.up()
 
     getcontext().prec = 10000

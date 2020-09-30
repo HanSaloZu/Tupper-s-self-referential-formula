@@ -1,7 +1,7 @@
 from turtle import Screen, Turtle
 
 
-def get_turtle():
+def create_turtle():
     turtle = Turtle()
     turtle.shape("square")
     turtle.shapesize(0.6, 0.6)
@@ -11,7 +11,7 @@ def get_turtle():
     return turtle
 
 
-def get_customized_screen():
+def create_screen():
     screen = Screen()
     screen.title("Tupper's self-referential formula")
     screen.setup(width=1600, height=450)
