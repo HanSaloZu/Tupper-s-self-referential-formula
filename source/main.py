@@ -1,5 +1,5 @@
 import os
-import mathematics
+import formula
 import display
 from decimal import Decimal, getcontext
 
@@ -25,7 +25,7 @@ if __name__ == "__main__":
         for row in range(17):
             screen.update()
 
-            if mathematics.is_pixel_black(column, row, k):
+            if formula.is_pixel_black(column, row, k):
                 display.draw_pixel(turtle, x, y)
 
             y += pixel_size
