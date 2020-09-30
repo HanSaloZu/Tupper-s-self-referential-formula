@@ -14,7 +14,7 @@ def create_turtle():
 def create_screen():
     screen = Screen()
     screen.title("Tupper's self-referential formula")
-    screen.setup(width=1600, height=450)
+    screen.setup(width=1300, height=450)
     screen.tracer(0)
 
     return screen

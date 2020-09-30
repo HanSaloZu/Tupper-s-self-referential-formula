@@ -16,10 +16,10 @@ if __name__ == "__main__":
     with open(DIR + "/source/k.txt", "r") as txt_k:
         k = Decimal(txt_k.read())
 
-    x = -700
+    x = -450
     y = -128
 
-    pixel_size = 13
+    pixel_size = 12
 
     for column in range(106):
         for row in range(17):
