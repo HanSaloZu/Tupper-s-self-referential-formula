@@ -16,7 +16,7 @@ if __name__ == "__main__":
     with open(DIR + "/source/k.txt", "r") as txt_k:
         k = Decimal(txt_k.read())
 
-    x = -450
+    x = -550
     y = -128
 
     pixel_size = 12
