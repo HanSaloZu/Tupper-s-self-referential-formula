@@ -1,12 +1,12 @@
 from turtle import Screen, Turtle
 
 
-def create_turtle():
+def create_turtle(pixel_size):
     turtle = Turtle()
     turtle.shape("square")
-    turtle.shapesize(0.6, 0.6)
-    turtle.pensize(1)
+    turtle.shapesize(pixel_size / 20, pixel_size / 20)
     turtle.hideturtle()
+    turtle.up()
 
     return turtle
 
