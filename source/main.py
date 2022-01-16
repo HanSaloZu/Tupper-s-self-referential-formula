@@ -21,13 +21,12 @@ if __name__ == "__main__":
 
     for column in range(_NUMBER_OF_BITMAP_COLUMNS):
         for row in range(_NUMBER_OF_BITMAP_ROWS):
-            screen.update()
-
             if formula.is_pixel_black(column, row + k):
                 display.draw_pixel(turtle, x, y)
 
             y += cfg.PIXEL_SIZE
 
+        screen.update()
         y = START_Y
         x += cfg.PIXEL_SIZE
 
