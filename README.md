@@ -1,9 +1,12 @@
 # Tupper-s-self-referential-formula-in-Python
-Implementing the Tapper self-referential formula in Python, with which you can create bitmaps with a size of 17x106 pixels.
 
-Run main.py to see the graph as a graph equation. 
+This is a Python implementation of the Tupper's self-referential formula that can produce 17x106 pixel bitmaps.
 
-To create your own picture, you need to put the picture key in the k.txt file and run main.py.
+Clone this repository and run the main.py file to see the result (Tupper's formula itself). The k.txt file already contains the required value.
+
+You can configure the application by editing the config.py file. By changing `SCREEN_HEIGHT` and `SCREEN_WIDTH` you can resize the application window. `SCREEN_TITLE` is the title of the application window. By changing `PIXEL_SIZE` you can scale the image that will be drawn.
+
+To draw your own image, you need to put the image k constant in the k.txt file and run the main.py file.
 
 ## References
 
@@ -11,6 +14,6 @@ To create your own picture, you need to put the picture key in the k.txt file an
 
 [Numberphile video](https://www.youtube.com/watch?v=_s5RFgd59ao)
 
-## Here is what the formula looks like
+## License
 
-![Tupper's self referential formula](https://wikimedia.org/api/rest_v1/media/math/render/svg/5e4c7a30f3dc20c06057413aed7c89b7e1c67aeb)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
