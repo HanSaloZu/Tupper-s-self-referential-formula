@@ -11,10 +11,10 @@ def create_turtle(pixel_size):
     return turtle
 
 
-def create_screen():
+def create_screen(title, width, height):
     screen = Screen()
-    screen.title("Tupper's self-referential formula")
-    screen.setup(width=1300, height=450)
+    screen.title(title)
+    screen.setup(width=width, height=height)
     screen.tracer(0)
 
     return screen
