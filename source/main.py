@@ -23,7 +23,7 @@ if __name__ == "__main__":
         for row in range(_NUMBER_OF_BITMAP_ROWS):
             screen.update()
 
-            if formula.is_pixel_black(column, row, k):
+            if formula.is_pixel_black(column, row + k):
                 display.draw_pixel(turtle, x, y)
 
             y += cfg.PIXEL_SIZE
