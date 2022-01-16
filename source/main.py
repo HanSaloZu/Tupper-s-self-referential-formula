@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     for column in range(_NUMBER_OF_BITMAP_COLUMNS):
         for row in range(_NUMBER_OF_BITMAP_ROWS):
-            if formula.is_pixel_black(column, row + k):
+            if formula.should_pixel_be_drawn(column, row + k):
                 display.draw_pixel(turtle, x, y)
 
             y += cfg.PIXEL_SIZE
