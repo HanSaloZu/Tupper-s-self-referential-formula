@@ -1,13 +1,17 @@
-import math
+from math import floor
 from decimal import Decimal, getcontext
 
 
-getcontext().prec = 10000
+class TupperFormula:
+    def __init__(self, k):
+        getcontext().prec = 10000
+        self.k = k
 
+    def should_pixel_be_drawn(self, x, y):
+        y += self.k
 
-def should_pixel_be_drawn(x, y):
-    power_of_two = -17 * math.floor(x) - math.floor(y) % 17
-    formula = math.floor((math.floor(Decimal(y)/17) *
-                         (2 ** Decimal(power_of_two))) % 2)
+        power_of_two = -17 * floor(x) - floor(y) % 17
+        formula = floor(
+            (floor(Decimal(y)/17) * (2 ** Decimal(power_of_two))) % 2)
 
-    return formula > 0.5
+        return formula > 0.5

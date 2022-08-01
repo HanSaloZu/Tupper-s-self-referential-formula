@@ -1,4 +1,4 @@
-import formula
+from formula import TupperFormula
 import display
 import config as cfg
 
@@ -18,10 +18,11 @@ def main():
     x = START_X
     y = START_Y
     turtle = display.create_turtle(cfg.PIXEL_SIZE)
+    tformula = TupperFormula(k)
 
     for column in range(_NUMBER_OF_BITMAP_COLUMNS):
         for row in range(_NUMBER_OF_BITMAP_ROWS):
-            if formula.should_pixel_be_drawn(column, row + k):
+            if tformula.should_pixel_be_drawn(column, row):
                 display.draw_pixel(turtle, x, y)
 
             y += cfg.PIXEL_SIZE
