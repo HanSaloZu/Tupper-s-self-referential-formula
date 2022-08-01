@@ -3,7 +3,7 @@ import display
 import config as cfg
 
 
-if __name__ == "__main__":
+def main():
     with open(cfg.BASE_DIR + "/source/k.txt", "r") as k_txt:
         k = int(k_txt.read())
 
@@ -31,3 +31,7 @@ if __name__ == "__main__":
         x += cfg.PIXEL_SIZE
 
     screen.mainloop()
+
+
+if __name__ == "__main__":
+    main()
