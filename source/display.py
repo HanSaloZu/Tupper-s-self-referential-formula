@@ -1,25 +1,24 @@
 from turtle import Screen, Turtle
 
 
-def create_turtle(pixel_size):
-    turtle = Turtle()
-    turtle.shape("square")
-    turtle.shapesize(pixel_size / 20, pixel_size / 20)
-    turtle.hideturtle()
-    turtle.up()
+class CustomScreen:
+    def __init__(self, title, width, height, pixel_size):
+        self._screen = Screen()
+        self._screen.title(title)
+        self._screen.setup(width=width, height=height)
+        self._screen.tracer(0)
 
-    return turtle
+        self._turtle = Turtle(shape="square")
+        self._turtle.shapesize(pixel_size / 20, pixel_size / 20)
+        self._turtle.hideturtle()
+        self._turtle.up()
 
+    def draw_pixel(self, x, y):
+        self._turtle.goto(x, y)
+        self._turtle.stamp()
 
-def create_screen(title, width, height):
-    screen = Screen()
-    screen.title(title)
-    screen.setup(width=width, height=height)
-    screen.tracer(0)
+    def mainloop(self):
+        self._screen.mainloop()
 
-    return screen
-
-
-def draw_pixel(turtle, x, y):
-    turtle.goto(x, y)
-    turtle.stamp()
+    def update(self):
+        self._screen.update()
